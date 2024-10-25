@@ -11,21 +11,21 @@ int main() {
     int target1 = 7;  // In the list
     int target2 = 10; // Not in the list
 
-    // Recursive Binary Search
+    // Recursive Binary Search.
     int index = recursiveBinarySearch(vec, target1, 0, vec.size() - 1);
     std::cout << "Target " << target1 << " found at location " << index << '\n';
 
     index = recursiveBinarySearch(vec, target2, 0, vec.size() - 1);
     std::cout << "Target " << target2 << " was not found, return value is " << index << '\n';
 
-    // Iterative Binary Search
+    // Iterative Binary Search.
     index = iterativeBinarySearch(vec, target1);
     std::cout << "Target " << target1 << " found at location " << index << '\n';
 
     index = iterativeBinarySearch(vec, target2);
     std::cout << "Target " << target2 << " was not found, return value is " << index << '\n';
 
-    // Sequential Search
+    // Sequential Search.
     index = sequentialSearch(vec, target1);
     std::cout << "Target " << target1 << " found at location " << index << '\n';
 
